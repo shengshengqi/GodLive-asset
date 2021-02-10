@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "antd-mobile/dist/antd-mobile.css";
+import Tab from "./components/Tab";
+import Modal from "./components/Modal";
+import axios from "axios";
+
+axios.defaults.baseURL = "http://129.204.218.96:4000";
 
 function App() {
+  useEffect(() => {
+    axios.get("/goldlog/pv").then(function (response) {
+      console.log(response.data, "成功加一");
+    });
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3 style={{ textAlign: "center" }}>神仙居春节山顶旅游线示意图</h3>
+      <Tab />
+      <Modal />
     </div>
   );
 }
