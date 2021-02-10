@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Button, WhiteSpace, WingBlank } from "antd-mobile";
+import { Modal, Button } from "antd-mobile";
 
 function closest(el, selector) {
   const matchesSelector =
@@ -49,11 +49,10 @@ class ModalExample extends React.Component {
 
   render() {
     return (
-      <WingBlank>
+      <div>
         <Button onClick={this.showModal("modal1")} icon="check-circle-o">
           游览结束
         </Button>
-        <WhiteSpace />
         <Modal
           visible={this.state.modal1}
           transparent
@@ -64,7 +63,7 @@ class ModalExample extends React.Component {
             {
               text: "Ok",
               onPress: () => {
-                console.log("ok");
+                // console.log("ok");
                 this.onClose("modal1")();
               },
             },
@@ -76,7 +75,7 @@ class ModalExample extends React.Component {
         >
           <div>祝您新年快乐~</div>
         </Modal>
-      </WingBlank>
+      </div>
     );
   }
 }

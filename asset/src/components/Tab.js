@@ -1,4 +1,4 @@
-import { Tabs, WhiteSpace } from "antd-mobile";
+import { Tabs } from "antd-mobile";
 import "./Tab.css";
 
 function TabExample() {
@@ -46,7 +46,6 @@ function TabExample() {
           ></img>
         </div>
       </Tabs>
-      <WhiteSpace />
     </div>
   );
 }

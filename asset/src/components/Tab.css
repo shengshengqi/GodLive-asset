@@ -10,4 +10,5 @@ img {
   align-items: "center";
   justify-content: "center";
   background-color: "#fff";
+  /* -webkit-overflow-scrolling: touch; */
 }

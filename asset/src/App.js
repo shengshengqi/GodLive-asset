@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className="App">
-      <h3 style={{ textAlign: "center" }}>神仙居春节山顶旅游线示意图</h3>
       <Tab />
       <Modal />
     </div>
