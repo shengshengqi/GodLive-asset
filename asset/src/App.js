@@ -9,7 +9,7 @@ axios.defaults.baseURL = "http://129.204.218.96:4000";
 function App() {
   useEffect(() => {
     axios.get("/goldlog/pv").then(function (response) {
-      console.log(response.data, "成功加一");
+      // console.log(response.data, "成功加一");
     });
   });
 

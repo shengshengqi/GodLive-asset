@@ -15,10 +15,10 @@ function TabExample() {
         tabs={tabs}
         initialPage={0}
         onChange={(tab, index) => {
-          console.log("onChange", index, tab);
+          // console.log("onChange", index, tab);
         }}
         onTabClick={(tab, index) => {
-          console.log("onTabClick", index, tab);
+          // console.log("onTabClick", index, tab);
         }}
       >
         <div className="tab">
